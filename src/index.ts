@@ -8,8 +8,8 @@ function component() {
   element.innerHTML = "hello TS";
   element.classList.add('hello');
 
-  btn.innerHTML = 'Click me and check the console';
-  btn.onclick = function() {
+  btn.innerHTML = 'Click me and check the console!';
+  btn.onclick = function () {
     const r = new Rand();
     console.log(r.getNumber());
   };
