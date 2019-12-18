@@ -4,9 +4,10 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js",
-    "build": "webpack"
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "dev": "node server/server.js",
+    "build": "webpack --config webpack.prod.js",
+    "library": "webpack --config webpack.lib.js"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +24,8 @@
     "typescript": "^3.7.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "base64-image-loader": "^1.2.1",
